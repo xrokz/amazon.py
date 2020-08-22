@@ -12,15 +12,6 @@ def main():
     res = req.text
     parsed = parseHTML(res)
 
-    # print(parsed)
-
-    # items = parsed.select("#search > div.s-desktop-width-max.s-desktop-content.sg-row > div.sg-col-20-of-24.sg-col-28-of-32.sg-col-16-of-20.sg-col.sg-col-32-of-36.sg-col-8-of-12.sg-col-12-of-16.sg-col-24-of-28 > div > span:nth-child(4) > div.s-main-slot.s-result-list.s-search-results.sg-row ")
-    # print(len(items))
-    # max_items = 10
-    # # print(items)
-    # if len(items) > 10: max_items = 10
-    # if len(items) <= 10: max_items = len(items)
-    # if len(items) > 1: return print("No items Found")
     for i in range(0, 20):
         try:
             i+=1
