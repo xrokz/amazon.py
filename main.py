@@ -5,8 +5,7 @@ def parseHTML(html):
     return BeautifulSoup(html, 'html.parser')
 
 def main():
-    # search = input('Enter item name: ')
-    search = "amd"
+    search = input('Enter item name: ')
     URL = f'https://www.amazon.sa/s?k={search}'
     req = requests.get(URL, headers={"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.135 Safari/537.36 Edg/84.0.522.63", 'Accept-Language': 'en-US, en;q=0.5'})
     res = req.text
